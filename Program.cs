@@ -1,28 +1,34 @@
 ﻿using University.Enum;
 using University.Service;
+using UniversityManagerWithDB.Service;
 
 namespace University
 {
     internal class Program
     {
 
-        static AppMenùService appMenùService = new AppMenùService();
+        //static void Main(string[] args)
+        //{
+        //    DBservice dBservice = new DBservice();
+        //    Console.WriteLine(dBservice.GetFaculties());
+        //}
+        
 
+        static void Main(string[] args)=>AppMenu();
 
-        //static void Main(string[] args)=>AppMenu();
-
-        static void Main(string[] args)
-        {
-            DBservice dBservice = new DBservice();
-            Console.WriteLine(dBservice.GetTeacher());
-        }
 
         public static void AppMenu()
         {
-            
-            
+
+
+
+            AppMenusService appMenusService = new AppMenusService();
+            appMenusService.facultiesRepository.ImportFaculties();
+            appMenusService.teachersRepository.ImportTeachers();
+            //appMenusService.examesRepository.ImportExames();
+            //appMenusService.studentsRepository.ImportStudents();
             bool exitLoop = false;
-            
+
             while (!exitLoop)
             {
                 Console.WriteLine("Menù Principale:\n----------------------------------------------");
@@ -63,23 +69,23 @@ namespace University
                 switch (selectedIndex)
                 {
                     case (int)AppMenuEnum.StudentsManagment:
-                    
+
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        appMenùService.StudentsManagment();
-                        
+                        appMenusService.StudentsManagment();
+
                         break;
                     case (int)AppMenuEnum.TeachersManagment:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        appMenùService.TeachersManagment();
+                        appMenusService.TeachersManagment();
 
                         break;
                     case (int)AppMenuEnum.ExamsManagment:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        appMenùService.ExamsManagment();
+                        appMenusService.ExamsManagment();
                         break;
-                    case (int)AppMenuEnum.Facultieslist:
+                    case (int)AppMenuEnum.FacultiesManagment:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        appMenùService.FacultiesList();
+                        appMenusService.FacultiesManagment();
                         break;
                     case (int)AppMenuEnum.Exit:
                         Console.WriteLine($"Uscita dall' Applicazione");
@@ -87,9 +93,10 @@ namespace University
                         break;
                 }
 
-                if(exitLoop==false){
-                Console.WriteLine("Premere un tasto per tornare al menù principale");
-                _ = Console.ReadKey();
+                if (exitLoop == false)
+                {
+                    Console.WriteLine("Premere un tasto per tornare al menù principale");
+                    _ = Console.ReadKey();
                 }
 
             }

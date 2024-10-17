@@ -4,7 +4,7 @@ public enum TeachersManagmentEnum
 {
 
    GetAllTeachers,
-   SearchTeacher,
+  
    AddTeacher,
    UpdateTeacher,
    DeleteTeacher,

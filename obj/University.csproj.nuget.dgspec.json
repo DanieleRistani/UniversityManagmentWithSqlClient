@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Daniele\\wa\\UniversityManagment\\University.csproj": {}
+    "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\University.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Daniele\\wa\\UniversityManagment\\University.csproj": {
+    "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\University.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniele\\wa\\UniversityManagment\\University.csproj",
+        "projectUniqueName": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\University.csproj",
         "projectName": "University",
-        "projectPath": "C:\\Users\\Daniele\\wa\\UniversityManagment\\University.csproj",
-        "packagesPath": "C:\\Users\\Daniele\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniele\\wa\\UniversityManagment\\obj\\",
+        "projectPath": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\University.csproj",
+        "packagesPath": "C:\\Users\\Desktop\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Daniele\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Desktop\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -75,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

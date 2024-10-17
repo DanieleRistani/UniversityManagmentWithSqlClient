@@ -1,18 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Daniele\\wa\\UniversityManagment\\",
+  "WorkspaceRootPath": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\daniele\\wa\\universitymanagment\\service\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\desktop\\wa\\c#_corso\\universitymanagmentwithsqlclient\\service\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:service\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\daniele\\wa\\universitymanagment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\desktop\\wa\\c#_corso\\universitymanagmentwithsqlclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\daniele\\wa\\universitymanagment\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\desktop\\wa\\c#_corso\\universitymanagmentwithsqlclient\\service\\studentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:service\\studentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\desktop\\wa\\c#_corso\\universitymanagmentwithsqlclient\\service\\examesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:service\\examesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\desktop\\wa\\c#_corso\\universitymanagmentwithsqlclient\\repository\\examesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:repository\\examesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\desktop\\wa\\c#_corso\\universitymanagmentwithsqlclient\\service\\appmenusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:service\\appmenusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\desktop\\wa\\c#_corso\\universitymanagmentwithsqlclient\\entity\\exames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:entity\\exames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\desktop\\wa\\c#_corso\\universitymanagmentwithsqlclient\\service\\teachersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:service\\teachersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\desktop\\wa\\c#_corso\\universitymanagmentwithsqlclient\\service\\facultiesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:service\\facultiesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\desktop\\wa\\c#_corso\\universitymanagmentwithsqlclient\\enum\\teachersmanagmentenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:enum\\teachersmanagmentenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\desktop\\wa\\c#_corso\\universitymanagmentwithsqlclient\\enum\\studentsmanagmentenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:enum\\studentsmanagmentenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\desktop\\wa\\c#_corso\\universitymanagmentwithsqlclient\\enum\\examsmanagmentenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:enum\\examsmanagmentenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,22 +58,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\UniversityManagment\\App.config",
-              "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\Users\\Daniele\\wa\\UniversityManagment\\App.config",
-              "RelativeToolTip": "App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAADTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-10-17T14:59:12.502Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -50,26 +72,156 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "DBservice.cs",
-              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Service\\DBservice.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Service\\DBservice.cs",
               "RelativeDocumentMoniker": "Service\\DBservice.cs",
-              "ToolTip": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Service\\DBservice.cs",
+              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Service\\DBservice.cs",
               "RelativeToolTip": "Service\\DBservice.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAgwCgAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T14:59:30.657Z",
+              "WhenOpened": "2024-10-17T21:39:35.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Exames.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Entity\\Exames.cs",
+              "RelativeDocumentMoniker": "Entity\\Exames.cs",
+              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Entity\\Exames.cs",
+              "RelativeToolTip": "Entity\\Exames.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T21:38:08.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ExamesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Repository\\ExamesRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ExamesRepository.cs",
+              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Repository\\ExamesRepository.cs",
+              "RelativeToolTip": "Repository\\ExamesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T21:35:00.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExamesService.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Service\\ExamesService.cs",
+              "RelativeDocumentMoniker": "Service\\ExamesService.cs",
+              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Service\\ExamesService.cs",
+              "RelativeToolTip": "Service\\ExamesService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T21:33:49.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FacultiesService.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Service\\FacultiesService.cs",
+              "RelativeDocumentMoniker": "Service\\FacultiesService.cs",
+              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Service\\FacultiesService.cs",
+              "RelativeToolTip": "Service\\FacultiesService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T21:33:35.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TeachersService.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Service\\TeachersService.cs",
+              "RelativeDocumentMoniker": "Service\\TeachersService.cs",
+              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Service\\TeachersService.cs",
+              "RelativeToolTip": "Service\\TeachersService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T21:33:28.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentsService.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Service\\StudentsService.cs",
+              "RelativeDocumentMoniker": "Service\\StudentsService.cs",
+              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Service\\StudentsService.cs",
+              "RelativeToolTip": "Service\\StudentsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T21:33:14.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TeachersManagmentEnum.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Enum\\TeachersManagmentEnum.cs",
+              "RelativeDocumentMoniker": "Enum\\TeachersManagmentEnum.cs",
+              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Enum\\TeachersManagmentEnum.cs",
+              "RelativeToolTip": "Enum\\TeachersManagmentEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T21:32:58.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StudentsManagmentEnum.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Enum\\StudentsManagmentEnum.cs",
+              "RelativeDocumentMoniker": "Enum\\StudentsManagmentEnum.cs",
+              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Enum\\StudentsManagmentEnum.cs",
+              "RelativeToolTip": "Enum\\StudentsManagmentEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T21:32:55.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppMenusService.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Service\\AppMenusService.cs",
+              "RelativeDocumentMoniker": "Service\\AppMenusService.cs",
+              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Service\\AppMenusService.cs",
+              "RelativeToolTip": "Service\\AppMenusService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T21:31:09.124Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Program.cs",
+              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAxwBoAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T14:56:46.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ExamsManagmentEnum.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Enum\\ExamsManagmentEnum.cs",
+              "RelativeDocumentMoniker": "Enum\\ExamsManagmentEnum.cs",
+              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagmentWithSqlClient\\Enum\\ExamsManagmentEnum.cs",
+              "RelativeToolTip": "Enum\\ExamsManagmentEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T21:32:50.529Z",
               "EditorCaption": ""
             }
           ]

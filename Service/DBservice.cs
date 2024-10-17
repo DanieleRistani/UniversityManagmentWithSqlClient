@@ -1,4 +1,4 @@
-﻿using OPP.Entity;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using University.Entity;
+using UniversityManagerWithDB.Entity;
 
 namespace University.Service
 {
@@ -31,7 +32,7 @@ namespace University.Service
             catch (Exception ex) 
             {
             
-               Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.Message);
                 throw;
 
             }
@@ -45,50 +46,56 @@ namespace University.Service
         
         }
 
-        public List<Faculty> GetFaculty()
+        public List<Faculties> GetFaculties()
         {
-            List<Faculty> faculties = new List<Faculty>();
-            string query = "SELECT * FROM Faculty";
-
+            List<Faculties> faculties = new List<Faculties>();
+            string query = "SELECT * FROM Faculties";
+            
+            _connection.Open();
             using (_command = new SqlCommand(query, _connection))
             {
                 using (var reader = _command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        faculties.Add(new Faculty(reader["faculty_name"].ToString(), reader["faculty_location"].ToString()));
+                        faculties.Add(new Faculties(reader["faculty_name"].ToString(), reader["faculty_location"].ToString()));
                        
                     }
                 }
             }
-
+            _connection.Close();
             return faculties;
         }
-        public List<Matter> GetMatter()
+
+
+        public List<Matters> GetMatters()
         {
-            List<Matter> matters = new List<Matter>();
+            List<Matters> matters = new List<Matters>();
             string query = "SELECT * FROM Matter";
 
+            _connection.Open();
             using (_command = new SqlCommand(query, _connection))
             {
                 using (var reader = _command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        matters.Add(new Matter(reader["matter_code"].ToString(), reader["matter_name"].ToString(), reader["matter_faculty_name"].ToString()));
-                        
+                        matters.Add(new Matters(reader["matter_code"].ToString(), reader["matter_name"].ToString(), int.Parse(reader["matter_faculty_id"].ToString())));
+
                     }
                 }
             }
-
+            _connection.Close();
             return matters;
         }
 
 
-        public List<Student> GetStudent()
+        public List<Students> GetStudents()
         {
-            List<Student> students = new List<Student>();
+            List<Students> students = new List<Students>();
             string query = "SELECT * FROM Student";
+
+            _connection.Open();
 
             using (_command = new SqlCommand(query, _connection))
             {
@@ -96,75 +103,75 @@ namespace University.Service
                 {
                     while (reader.Read())
                     {
-                        students.Add(new Student(reader["student_name"].ToString(), reader["student_surname"].ToString(), int.Parse(reader["student_age"].ToString()), reader["student_gender"].ToString(), reader["student_mat"].ToString(), reader["student_faculty_name"].ToString(), int.Parse(reader["student_year_of_registration"].ToString())));
-                      
+                        students.Add(new Students(reader["student_mat"].ToString(),reader["student_name"].ToString(), reader["student_surname"].ToString(), int.Parse(reader["student_age"].ToString()), reader["student_gender"].ToString(), DateTime.Parse(reader["student_year_of_registration"].ToString()), int.Parse(reader["student_faculty_id"].ToString())));
+
                     }
                 }
             }
-
+            _connection.Close();    
             return students;
         }
 
-        public List<Teacher> GetTeacher()
+        public List<Teachers> GetTeachers()
         {
-            List<Teacher> teachers = new List<Teacher>();
+            List<Teachers> teachers = new List<Teachers>();
             string query = "SELECT * FROM Teacher";
 
+            _connection.Open();
             using (_command = new SqlCommand(query, _connection))
             {
                 using (var reader = _command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        Matter matter=this.GetMatter().Find(m=>m.Name == reader["teacher_matter_name"].ToString());
-                        TeacherRoleEnum role = reader["teacher_role"].ToString().StartsWith("A") ? TeacherRoleEnum.Assistant : TeacherRoleEnum.Teacher;
-                        teachers.Add(new Teacher(reader["teacher_name"].ToString(), reader["teacher_surname"].ToString(), int.Parse(reader["teacher_age"].ToString()), reader["teacher_gender"].ToString(), reader["teacher_code"].ToString(), reader["teacher_faculty_name"].ToString(),matter,role));
+                        
+                        teachers.Add(new Teachers(reader["teacher_code"].ToString(), int.Parse(reader["teacher_faculty_id"].ToString()), int.Parse(reader["teacher_matter_id"].ToString()), reader["teacher_role"].ToString(),reader["teacher_name"].ToString(), reader["teacher_surname"].ToString(), int.Parse(reader["teacher_age"].ToString()), reader["teacher_gender"].ToString()));
                     }
                 }
             }
-
+            _connection.Close();
             return teachers;
         }
 
-        public List<Exam> GetExam()
+        public List<Exames> GetExames()
         {
-            List<Exam> exams = new List<Exam>();
+            List<Exames> exams = new List<Exames>();
             string query = "SELECT * FROM Exam";
 
+            _connection.Open();
             using (_command = new SqlCommand(query, _connection))
             {
                 using (var reader = _command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        Matter matter = this.GetMatter().Find(m => m.Name == reader["exame_matter_name"].ToString());
+                       
+                        exams.Add(new Exames(reader["exame_code"].ToString(), int.Parse(reader["exame_teacher_id"].ToString()), int.Parse(reader["exame_student_id"].ToString()), DateTime.Parse(reader["exame_date"].ToString()), int.Parse(reader["exame_result"].ToString()), int.Parse(reader["exame_matter_id"].ToString())));
 
-                        exams.Add(new Exam(reader["exame_code"].ToString(), matter, reader["exame_teacher_code"].ToString(), reader["exame_student_mat"].ToString(),DateTime.Parse(reader["exame_date"].ToString()), int.Parse(reader["exame_result"].ToString())));
-                        
                     }
                 }
             }
-
+            _connection.Close();    
             return exams;
         }
 
-        public List<Log> GetLog()
+        public List<Logs> GetLog()
         {
-            List<Log> logs = new List<Log>();
-            string query = "SELECT * FROM Log";
-
+            List<Logs> logs = new List<Logs>();
+            string query = "SELECT * FROM Logs";
+            _connection.Open();
             using (_command = new SqlCommand(query, _connection))
             {
                 using (var reader = _command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        logs.Add(new Log(reader["log_message"].ToString(),DateTime.Parse(reader["log_date"].ToString()), reader["log_error_place"].ToString()));
-                        
+                        logs.Add(new Logs(reader["log_message"].ToString(), DateTime.Parse(reader["log_date"].ToString()), reader["log_error_place"].ToString()));
+
                     }
                 }
             }
-
+            _connection.Close();
             return logs;
         }
     }

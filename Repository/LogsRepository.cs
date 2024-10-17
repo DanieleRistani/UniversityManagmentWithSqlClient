@@ -7,14 +7,13 @@ using University.Service;
 
 namespace University.Repository;
 
-public class LogRepository 
+public class LogsRepository 
 {
-    public List<Log> LogList { get; set; } = [];
+    public List<Logs> LogList { get; set; } = [];
 
-    public void ImportLog() { 
+    public void ImportLogs() {
         DBservice dBservice = new DBservice();
         LogList = dBservice.GetLog();
-    
-    
+
     }
 }

@@ -4,21 +4,22 @@ using System.Text.Json;
 using University.Entity;
 using University.Interface;
 using University.Service;
+using UniversityManagerWithDB.Entity;
 
 namespace University;
 
-public class FacultyRepository
+public class FacultiesRepository
 {
-    public List<Faculty> Faculties {get;set;}=[];
+    public List<Faculties> Faculties {get;set;}=[];
 
-    public void ImportFaculty(){
+    public void ImportFaculties(){
 
 
         DBservice dbservice = new DBservice();
-        Faculties = dbservice.GetFaculty();
+        Faculties = dbservice.GetFaculties();
 
 
     }
-    
-   
+
+
 }

@@ -1,12 +1,20 @@
-using System;
-using University.Interface;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using University.Repository;
 
-namespace University.Service;
-
-public class FacultiesService
+namespace University.Service
 {
-  public FacultyRepository facultyRepository { get; set; } = new();
+    internal class FacultiesService
+    {
+        public FacultiesRepository facultiesRepository { get; set; } = new FacultiesRepository();
 
 
-  
+        public void PrintFaculties()
+        {
+            facultiesRepository.Faculties.ForEach(f => Console.WriteLine(f.ToString()));
+        }
+    }
 }

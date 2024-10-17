@@ -4,16 +4,17 @@ using System.Text.Json;
 using University.Entity;
 using University.Interface;
 using University.Service;
+using UniversityManagerWithDB.Entity;
 
 namespace University.Repository;
 
-public class ExamRepository  
+public class ExamesRepository  
 {
-  public List<Exam> Exams { get; set; } = [];
+  public List<Exames> Exames { get; set; } = [];
 
-  public void ImportExams()
+  public void ImportExames()
   {
         DBservice dbservice = new DBservice();
-        Exams = dbservice.GetExam();
-  }
+        Exames = dbservice.GetExames();
+    }
 }

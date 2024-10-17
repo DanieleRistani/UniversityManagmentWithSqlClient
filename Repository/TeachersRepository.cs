@@ -1,25 +1,25 @@
 using System;
 using System.Configuration;
 using System.Text.Json;
-using OPP.Entity;
+
 using University.Interface;
 using University.Service;
+using UniversityManagerWithDB.Entity;
 
 namespace University.Repository;
 
-public class TeacherRepository
+public class TeachersRepository
 {
     
-    public List<Teacher> Teachers { get; set; } = [];
+    public List<Teachers> Teachers { get; set; } = [];
 
-    public void ImportTeacher()
+    public void ImportTeachers()
     {
         DBservice dBservice = new DBservice();
+        Teachers = dBservice.GetTeachers();
 
-        Teachers = dBservice.GetTeacher();
 
-        
-       
+
     }
 
 }

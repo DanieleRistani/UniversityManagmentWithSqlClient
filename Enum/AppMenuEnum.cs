@@ -5,7 +5,7 @@ public enum AppMenuEnum
     StudentsManagment, 
     TeachersManagment, 
     ExamsManagment, 
-    Facultieslist, 
+    FacultiesManagment,
     Exit
 
 }
