@@ -7,9 +7,15 @@ namespace University
     {
 
         static AppMenùService appMenùService = new AppMenùService();
-    
-        
-        static void Main(string[] args)=>AppMenu();
+
+
+        //static void Main(string[] args)=>AppMenu();
+
+        static void Main(string[] args)
+        {
+            DBservice dBservice = new DBservice();
+            Console.WriteLine(dBservice.GetTeacher());
+        }
 
         public static void AppMenu()
         {
