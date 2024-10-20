@@ -1,4 +1,5 @@
 ﻿using University.Enum;
+using University.Repository;
 using University.Service;
 using UniversityManagerWithDB.Service;
 
@@ -12,10 +13,29 @@ namespace University
         //    DBservice dBservice = new DBservice();
         //    Console.WriteLine(dBservice.GetFaculties());
         //}
-        
+
 
         static void Main(string[] args)=>AppMenu();
 
+        //static void Main(string[] args)
+        //{
+        //    FacultiesRepository facultiesRepository = new FacultiesRepository();
+        //    TeachersRepository teachersrepository  = new TeachersRepository();
+        //    StudentsRepository studentsRepository = new StudentsRepository();
+
+
+        //    facultiesRepository.ImportFaculties();
+        //    teachersrepository.ImportTeachers();
+        //    studentsRepository.ImportStudents();
+
+
+        //    facultiesRepository.Faculties.ForEach(f=>Console.WriteLine(f.ToString()));
+        //    teachersrepository.Teachers.ForEach(t => Console.WriteLine(t.ToString())); 
+        //    studentsRepository.Students.ForEach(s => Console.WriteLine(s.ToString()));
+
+
+
+        //}
 
         public static void AppMenu()
         {
@@ -24,7 +44,7 @@ namespace University
 
             AppMenusService appMenusService = new AppMenusService();
             appMenusService.facultiesRepository.ImportFaculties();
-            appMenusService.teachersRepository.ImportTeachers();
+            //appMenusService.teachersRepository.ImportTeachers();
             //appMenusService.examesRepository.ImportExames();
             //appMenusService.studentsRepository.ImportStudents();
             bool exitLoop = false;
@@ -32,7 +52,7 @@ namespace University
             while (!exitLoop)
             {
                 Console.WriteLine("Menù Principale:\n----------------------------------------------");
-                string[] options = { "Gestione Studenti", "Gestione Docenti", "Gestione Esami", "Lista Facoltà", "Esci" };
+                string[] options = { "Gestione Studenti", "Gestione Docenti", "Gestione Esami", "Gestione Facoltà", "Esci" };
                 int selectedIndex = 0;
                 ConsoleKeyInfo key;
 

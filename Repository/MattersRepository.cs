@@ -9,7 +9,7 @@ using UniversityManagerWithDB.Entity;
 namespace University.Repository
 {
       
-    internal class MattersRepository
+    public class MattersRepository
     {
         List<Matters> matters = [];
 

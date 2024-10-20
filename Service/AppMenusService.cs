@@ -15,12 +15,12 @@ namespace UniversityManagerWithDB.Service
         public ExamesRepository examesRepository { get; set; } = new ExamesRepository();
         public FacultiesRepository facultiesRepository { get; set; } = new FacultiesRepository();
        
+        
 
 
         public void StudentsManagment()
         {
             
-            StudentsService studentsService = new StudentsService();
             bool exitLoop = false;
             while (!exitLoop)
             {
@@ -65,7 +65,7 @@ namespace UniversityManagerWithDB.Service
                     
                     case (int)StudentsManagmentEnum.GetAllStudents:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        studentsService.PrintStudents();
+                        studentsRepository.Students.ForEach(s=> Console.WriteLine(s.ToString()));
                         break;
                     
                     case (int)StudentsManagmentEnum.AddStudent:
@@ -101,7 +101,6 @@ namespace UniversityManagerWithDB.Service
         public void TeachersManagment()
         {
 
-            TeachersService teachersService = new TeachersService();
             bool exitLoop = false;
             while (!exitLoop)
             {
@@ -145,7 +144,7 @@ namespace UniversityManagerWithDB.Service
                 {
                     case (int)TeachersManagmentEnum.GetAllTeachers:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        teachersService.PrintTeachers();
+                        teachersRepository.Teachers.ForEach(t => Console.WriteLine(t.ToString()));
                         break;
                   
                     case (int)TeachersManagmentEnum.AddTeacher:
@@ -180,7 +179,7 @@ namespace UniversityManagerWithDB.Service
         public void ExamsManagment()
         {
 
-            ExamesService examesService = new ExamesService();
+            
             bool exitLoop = false;
             while (!exitLoop)
             {
@@ -225,7 +224,7 @@ namespace UniversityManagerWithDB.Service
                 {
                     case (int)ExamsManagmentEnum.GetAllExams:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        examesService.PrintExames();
+                        examesRepository.Exames.ForEach(e => Console.WriteLine(e.ToString()));
                         break;
                     
                        
@@ -261,7 +260,7 @@ namespace UniversityManagerWithDB.Service
         public void FacultiesManagment()
         {
 
-            FacultiesService facultiesService = new FacultiesService();
+            
             bool exitLoop = false;
             while (!exitLoop)
             {
@@ -305,7 +304,7 @@ namespace UniversityManagerWithDB.Service
                 {
                     case (int)ExamsManagmentEnum.GetAllExams:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        facultiesService.PrintFaculties();
+                        facultiesRepository.Faculties.ForEach(f => Console.WriteLine(f.ToString()));
                         break;
 
                         break;
@@ -330,7 +329,7 @@ namespace UniversityManagerWithDB.Service
 
                 if (exitLoop == false)
                 {
-                    Console.WriteLine("Premere un tasto per tornare al menù gestione Esami");
+                    Console.WriteLine("Premere un tasto per tornare al menù gestione Facoltà");
                     _ = Console.ReadKey();
                 }
 

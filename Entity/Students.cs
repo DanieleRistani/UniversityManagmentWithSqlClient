@@ -14,10 +14,10 @@ namespace UniversityManagerWithDB.Entity
         public string student_surname { get; set; }
         public int student_age { get; set; }
         public string student_gender { get; set; }
-        public System.DateTime student_date_of_enrollment { get; set; }
+        public DateTime student_date_of_enrollment { get; set; }
         public long student_faculty_id { get; set; }
 
-        public Students(string student_mat, string student_name, string student_surname, int student_age, string student_gender, System.DateTime student_date_of_enrollment, long student_faculty_id)
+        public Students(string student_mat, string student_name, string student_surname, int student_age, string student_gender, DateTime student_date_of_enrollment, long student_faculty_id)
         {
             this.student_mat = student_mat;
             this.student_name = student_name;

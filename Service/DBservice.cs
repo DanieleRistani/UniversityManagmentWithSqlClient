@@ -71,7 +71,7 @@ namespace University.Service
         public List<Matters> GetMatters()
         {
             List<Matters> matters = new List<Matters>();
-            string query = "SELECT * FROM Matter";
+            string query = "SELECT * FROM Matters";
 
             _connection.Open();
             using (_command = new SqlCommand(query, _connection))
@@ -93,7 +93,7 @@ namespace University.Service
         public List<Students> GetStudents()
         {
             List<Students> students = new List<Students>();
-            string query = "SELECT * FROM Student";
+            string query = "SELECT * FROM Students";
 
             _connection.Open();
 
@@ -103,7 +103,7 @@ namespace University.Service
                 {
                     while (reader.Read())
                     {
-                        students.Add(new Students(reader["student_mat"].ToString(),reader["student_name"].ToString(), reader["student_surname"].ToString(), int.Parse(reader["student_age"].ToString()), reader["student_gender"].ToString(), DateTime.Parse(reader["student_year_of_registration"].ToString()), int.Parse(reader["student_faculty_id"].ToString())));
+                        students.Add(new Students(reader["student_mat"].ToString(),reader["student_name"].ToString(), reader["student_surname"].ToString(), int.Parse(reader["student_age"].ToString()), reader["student_gender"].ToString(), DateTime.Parse(reader["student_date_of_enrollment"].ToString()), int.Parse(reader["student_faculty_id"].ToString())));
 
                     }
                 }
@@ -115,7 +115,7 @@ namespace University.Service
         public List<Teachers> GetTeachers()
         {
             List<Teachers> teachers = new List<Teachers>();
-            string query = "SELECT * FROM Teacher";
+            string query = "SELECT * FROM Teachers";
 
             _connection.Open();
             using (_command = new SqlCommand(query, _connection))
@@ -136,7 +136,7 @@ namespace University.Service
         public List<Exames> GetExames()
         {
             List<Exames> exams = new List<Exames>();
-            string query = "SELECT * FROM Exam";
+            string query = "SELECT * FROM Exames";
 
             _connection.Open();
             using (_command = new SqlCommand(query, _connection))

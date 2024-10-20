@@ -7,7 +7,7 @@ using University.Repository;
 
 namespace University.Service
 {
-    internal class ExamesService
+    public class ExamesService
     {
         public ExamesRepository examesRepository { get; set; }=new ExamesRepository();
 
