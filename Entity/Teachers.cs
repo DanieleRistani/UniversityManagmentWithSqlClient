@@ -24,6 +24,8 @@ namespace UniversityManagerWithDB.Entity
         public int teacher_age { get; set; }
         public string teacher_gender { get; set; }
         
+
+        public Teachers(){}
         public Teachers(string teacher_code, long teacher_faculty_id, long teacher_matter_id, string teacher_role, string teacher_name, string teacher_surname, int teacher_age, string teacher_gender)
         {
             this.teacher_code = teacher_code;

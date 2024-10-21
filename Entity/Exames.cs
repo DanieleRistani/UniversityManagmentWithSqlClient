@@ -15,6 +15,8 @@ namespace UniversityManagerWithDB.Entity
         public int exame_result { get; set; }
         public long exame_matter_id { get; set; }
     
+
+        public Exames() { } 
         public Exames(string exame_code, long exame_teacher_id, long exame_student_id, System.DateTime exame_date, int exame_result, long exame_matter_id) {
         
         this.exame_code = exame_code;

@@ -7,35 +7,7 @@ namespace University
 {
     internal class Program
     {
-
-        //static void Main(string[] args)
-        //{
-        //    DBservice dBservice = new DBservice();
-        //    Console.WriteLine(dBservice.GetFaculties());
-        //}
-
-
         static void Main(string[] args)=>AppMenu();
-
-        //static void Main(string[] args)
-        //{
-        //    FacultiesRepository facultiesRepository = new FacultiesRepository();
-        //    TeachersRepository teachersrepository  = new TeachersRepository();
-        //    StudentsRepository studentsRepository = new StudentsRepository();
-
-
-        //    facultiesRepository.ImportFaculties();
-        //    teachersrepository.ImportTeachers();
-        //    studentsRepository.ImportStudents();
-
-
-        //    facultiesRepository.Faculties.ForEach(f=>Console.WriteLine(f.ToString()));
-        //    teachersrepository.Teachers.ForEach(t => Console.WriteLine(t.ToString())); 
-        //    studentsRepository.Students.ForEach(s => Console.WriteLine(s.ToString()));
-
-
-
-        //}
 
         public static void AppMenu()
         {
@@ -44,9 +16,10 @@ namespace University
 
             AppMenusService appMenusService = new AppMenusService();
             appMenusService.facultiesRepository.ImportFaculties();
-            //appMenusService.teachersRepository.ImportTeachers();
-            //appMenusService.examesRepository.ImportExames();
-            //appMenusService.studentsRepository.ImportStudents();
+            appMenusService.teachersRepository.ImportTeachers();
+            appMenusService.examesRepository.ImportExames();
+            appMenusService.studentsRepository.ImportStudents();
+            
             bool exitLoop = false;
 
             while (!exitLoop)

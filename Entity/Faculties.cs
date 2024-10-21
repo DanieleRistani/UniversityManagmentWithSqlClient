@@ -11,6 +11,7 @@ namespace UniversityManagerWithDB.Entity
         public string faculty_name { get; set; }
         public string faculty_location { get; set; }
 
+        public Faculties() { }
         public Faculties(string faculty_name, string faculty_location)
         {
             this.faculty_name = faculty_name;

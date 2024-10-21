@@ -9,10 +9,8 @@ namespace University.Service
 {
     public  class FacultiesService
     {
-        public FacultiesRepository facultiesRepository { get; set; } = new FacultiesRepository();
 
-
-        public void PrintFaculties()
+        public void PrintFaculties(FacultiesRepository facultiesRepository)
         {
             facultiesRepository.Faculties.ForEach(f => Console.WriteLine(f.ToString()));
         }

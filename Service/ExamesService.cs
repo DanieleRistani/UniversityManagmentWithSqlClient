@@ -9,9 +9,9 @@ namespace University.Service
 {
     public class ExamesService
     {
-        public ExamesRepository examesRepository { get; set; }=new ExamesRepository();
+        
 
-        public void PrintExames()
+        public void PrintExames(ExamesRepository examesRepository)
         {
           examesRepository.Exames.ForEach(e => Console.WriteLine(e.ToString()));
         }

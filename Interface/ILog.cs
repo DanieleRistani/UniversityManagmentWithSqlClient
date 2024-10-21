@@ -1,6 +1,7 @@
 using System;
 using University.Entity;
 using University.Repository;
+using University.Service;
 
 namespace University.Interface;
 
@@ -8,10 +9,13 @@ namespace University.Interface;
 public interface ILog
 {
     
-    static Logs AddNewLog(String message, String errorPlace)
+    static bool AddNewLog(String message, String errorPlace)
     {
-        Logs log = new Logs(message, DateTime.Now, errorPlace);
-        return log;
+        
+       DBservice dBservice = new DBservice();
+       return dBservice.AddLogs(message, errorPlace);
+        
+        
 
     }
 }

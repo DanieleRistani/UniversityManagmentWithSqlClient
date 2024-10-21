@@ -10,12 +10,16 @@ namespace UniversityManagerWithDB.Service
 {
     public class AppMenusService
     {
-        public StudentsRepository studentsRepository { get; set; } = new StudentsRepository();
-        public TeachersRepository teachersRepository { get; set; } = new TeachersRepository();
-        public ExamesRepository examesRepository { get; set; } = new ExamesRepository();
-        public FacultiesRepository facultiesRepository { get; set; } = new FacultiesRepository();
-       
-        
+        public StudentsRepository studentsRepository { get; set; } = new();
+        public TeachersRepository teachersRepository { get; set; } = new();
+        public ExamesRepository examesRepository { get; set; } = new();
+        public FacultiesRepository facultiesRepository { get; set; } = new();
+
+        public StudentsService studentsService { get; set; } = new();
+        public TeachersService teachersService { get; set; } = new();
+        public ExamesService examesService { get; set; } = new();
+        public FacultiesService facultiesService { get; set; } = new();
+
 
 
         public void StudentsManagment()
@@ -65,7 +69,7 @@ namespace UniversityManagerWithDB.Service
                     
                     case (int)StudentsManagmentEnum.GetAllStudents:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        studentsRepository.Students.ForEach(s=> Console.WriteLine(s.ToString()));
+                        studentsService.PrintStudents(studentsRepository);
                         break;
                     
                     case (int)StudentsManagmentEnum.AddStudent:
@@ -144,7 +148,7 @@ namespace UniversityManagerWithDB.Service
                 {
                     case (int)TeachersManagmentEnum.GetAllTeachers:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        teachersRepository.Teachers.ForEach(t => Console.WriteLine(t.ToString()));
+                        teachersService.PrintTeachers(teachersRepository);
                         break;
                   
                     case (int)TeachersManagmentEnum.AddTeacher:
@@ -224,7 +228,7 @@ namespace UniversityManagerWithDB.Service
                 {
                     case (int)ExamsManagmentEnum.GetAllExams:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        examesRepository.Exames.ForEach(e => Console.WriteLine(e.ToString()));
+                        examesService.PrintExames(examesRepository);
                         break;
                     
                        
@@ -304,7 +308,7 @@ namespace UniversityManagerWithDB.Service
                 {
                     case (int)ExamsManagmentEnum.GetAllExams:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        facultiesRepository.Faculties.ForEach(f => Console.WriteLine(f.ToString()));
+                        facultiesService.PrintFaculties(facultiesRepository);
                         break;
 
                         break;
