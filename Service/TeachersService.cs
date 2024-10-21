@@ -5,14 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using University.Repository;
 
+
 namespace University.Service
 {
     public class TeachersService
     {
-
-      public void PrintTeachers(TeachersRepository teachersRepository)
+        DBservice db = new();
+      public void PrintTeachers()
       {
-          teachersRepository.Teachers.ForEach(t=> Console.WriteLine(t.ToString()));
+         db.GetTeachers().ForEach(t=> Console.WriteLine(t.ToString()));
       }
       
     }

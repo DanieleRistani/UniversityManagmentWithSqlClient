@@ -21,7 +21,7 @@ using University.Interface;
 using UniversityManagerWithDB.Entity;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace University.Service
+namespace University.Repository
 {
     public class DBservice
     {
@@ -48,7 +48,7 @@ namespace University.Service
             }
             finally
             {
-                if (_connection.State == System.Data.ConnectionState.Open)
+                if (_connection.State == ConnectionState.Open)
                     _connection.Close();
             }
 
@@ -116,29 +116,29 @@ namespace University.Service
                     _command.ExecuteNonQuery();
 
                 }
-                
+
                 return true;
 
 
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
 
-                
-                ILog.AddNewLog(ex.Message,"AddFaculties");
+
+                ILog.AddNewLog(ex.Message, "AddFaculties");
                 return false;
-            
+
             }
             finally
             {
-               
+
                 if (_connection.State == ConnectionState.Open)
                 {
                     _connection.Close();
                 }
             }
         }
-        public bool UpdateFaculties(long faculty_id,string faculty_name,string faculty_location)
+        public bool UpdateFaculties(long faculty_id, string faculty_name, string faculty_location)
         {
 
             try
@@ -191,7 +191,7 @@ namespace University.Service
                 using (_command = new SqlCommand(query, _connection))
                 {
                     _command.Parameters.Add(new SqlParameter("@f_id", faculty_id));
-                  
+
                     _command.ExecuteNonQuery();
 
                 }
@@ -263,7 +263,7 @@ namespace University.Service
                         while (reader.Read())
                         {
                             matter = new Matters(reader["matter_code"].ToString(), reader["matter_name"].ToString(), int.Parse(reader["matter_faculty_id"].ToString()));
-                           
+
                         }
                     }
 
@@ -309,7 +309,7 @@ namespace University.Service
             return matter;
 
         }
-        public bool AddMatters(string matter_code,string matter_name,long matter_faculty_id)
+        public bool AddMatters(string matter_code, string matter_name, long matter_faculty_id)
         {
             try
             {
@@ -349,7 +349,7 @@ namespace University.Service
             }
 
         }
-        public bool UpdateMatters(long matter_id, string matter_name, long matter_faculty_id) 
+        public bool UpdateMatters(long matter_id, string matter_name, long matter_faculty_id)
         {
             try
             {
@@ -390,7 +390,7 @@ namespace University.Service
 
 
         }
-        public bool DeleteMatters(long matter_id) 
+        public bool DeleteMatters(long matter_id)
         {
             try
             {
@@ -480,7 +480,7 @@ namespace University.Service
 
                         }
                     }
-                 
+
                     return student;
 
                 }
@@ -525,7 +525,7 @@ namespace University.Service
             return student;
 
         }
-        public bool AddStudents(string mat,string name,string surname,int age,string gender,DateTime date,long s_faculty_id)
+        public bool AddStudents(string mat, string name, string surname, int age, string gender, DateTime date, long s_faculty_id)
         {
 
             try
@@ -536,12 +536,12 @@ namespace University.Service
                 using (_command = new SqlCommand(query, _connection))
                 {
                     _command.Parameters.Add(new SqlParameter("@s_mat", mat.ToUpper()));
-                    _command.Parameters.Add(new SqlParameter("@s_name",name));
+                    _command.Parameters.Add(new SqlParameter("@s_name", name));
                     _command.Parameters.Add(new SqlParameter("@s_surname", surname));
                     _command.Parameters.Add(new SqlParameter("@s_age", age));
                     _command.Parameters.Add(new SqlParameter("@s_gender", gender));
-                    _command.Parameters.Add(new SqlParameter("@s_date",date));
-                    _command.Parameters.Add(new SqlParameter("@s_faculty_id",s_faculty_id));
+                    _command.Parameters.Add(new SqlParameter("@s_date", date));
+                    _command.Parameters.Add(new SqlParameter("@s_faculty_id", s_faculty_id));
 
                     _command.ExecuteNonQuery();
 
@@ -569,7 +569,7 @@ namespace University.Service
             }
 
         }
-        public bool UpdateStudents(long id,string name, string surname, int age, string gender, DateTime date, long s_faculty_id)
+        public bool UpdateStudents(long id, string name, string surname, int age, string gender, DateTime date, long s_faculty_id)
         {
             try
             {
@@ -613,7 +613,7 @@ namespace University.Service
             }
 
         }
-        public bool DeleteStudents(long id) 
+        public bool DeleteStudents(long id)
         {
             try
             {
@@ -682,12 +682,12 @@ namespace University.Service
             try
             {
 
-            string query = "SELECT * FROM Teacher WHERE teacher_code=@code";
-            _connection.Open();
-            using (_command = new SqlCommand(query, _connection))
-            {
-                _command.Parameters.Add(new SqlParameter("@code", code.ToUpper()));
-                int rowCount = (int)_command.ExecuteScalar();
+                string query = "SELECT * FROM Teacher WHERE teacher_code=@code";
+                _connection.Open();
+                using (_command = new SqlCommand(query, _connection))
+                {
+                    _command.Parameters.Add(new SqlParameter("@code", code.ToUpper()));
+                    int rowCount = (int)_command.ExecuteScalar();
 
 
                     using (var reader = _command.ExecuteReader())
@@ -698,17 +698,17 @@ namespace University.Service
 
                         }
                     }
-                   
-                    return teacher;   
-                
-            }
-            }
-            catch (Exception ex) 
-            { 
-            
-                    ILog.AddNewLog(ex.Message, "GetTeacherBycode");
+
                     return teacher;
-            
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+                ILog.AddNewLog(ex.Message, "GetTeacherBycode");
+                return teacher;
+
             }
             finally
             {
@@ -744,7 +744,7 @@ namespace University.Service
             return teacher;
 
         }
-        public bool AddTeachers(string t_code,long t_faculty_id,long t_matter_id,string t_role,string t_name,string t_surname,int t_age,string t_gender)
+        public bool AddTeachers(string t_code, long t_faculty_id, long t_matter_id, string t_role, string t_name, string t_surname, int t_age, string t_gender)
         {
 
             try
@@ -755,8 +755,8 @@ namespace University.Service
                 using (_command = new SqlCommand(query, _connection))
                 {
                     _command.Parameters.Add(new SqlParameter("@t_code", t_code.ToUpper()));
-                    _command.Parameters.Add(new SqlParameter("@t_role",t_role));
-                    _command.Parameters.Add(new SqlParameter("@t_name",t_name));
+                    _command.Parameters.Add(new SqlParameter("@t_role", t_role));
+                    _command.Parameters.Add(new SqlParameter("@t_name", t_name));
                     _command.Parameters.Add(new SqlParameter("@t_surname", t_surname));
                     _command.Parameters.Add(new SqlParameter("@t_age", t_age));
                     _command.Parameters.Add(new SqlParameter("@t_gender", t_gender));
@@ -788,7 +788,7 @@ namespace University.Service
                 }
             }
         }
-        public bool UpdateTeachers(long t_id ,long t_faculty_id, long t_matter_id, string t_role, string t_name, string t_surname, int t_age, string t_gender)
+        public bool UpdateTeachers(long t_id, long t_faculty_id, long t_matter_id, string t_role, string t_name, string t_surname, int t_age, string t_gender)
         {
 
             try
@@ -799,7 +799,7 @@ namespace University.Service
                 _connection.Open();
                 using (_command = new SqlCommand(query, _connection))
                 {
-                    _command.Parameters.Add(new SqlParameter("@t_id",t_id));
+                    _command.Parameters.Add(new SqlParameter("@t_id", t_id));
                     _command.Parameters.Add(new SqlParameter("@t_role", t_role));
                     _command.Parameters.Add(new SqlParameter("@t_name", t_name));
                     _command.Parameters.Add(new SqlParameter("@t_surname", t_surname));
@@ -931,7 +931,7 @@ namespace University.Service
                 }
 
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
 
                 ILog.AddNewLog(ex.Message, "GetExameBycode");
@@ -946,7 +946,7 @@ namespace University.Service
                     _connection.Close();
                 }
             }
-            
+
 
 
 
@@ -976,7 +976,7 @@ namespace University.Service
 
 
         }
-        public bool AddExames(string e_code,long e_teacher_id,long e_student_id,DateTime e_date,int e_result)
+        public bool AddExames(string e_code, long e_teacher_id, long e_student_id, DateTime e_date, int e_result)
         {
 
             try
@@ -991,7 +991,7 @@ namespace University.Service
                     _command.Parameters.Add(new SqlParameter("@e_student_id", e_student_id));
                     _command.Parameters.Add(new SqlParameter("@e_date", e_date));
                     _command.Parameters.Add(new SqlParameter("@e_result", e_result));
-                    
+
 
                     _command.ExecuteNonQuery();
 
@@ -1063,7 +1063,7 @@ namespace University.Service
 
 
         }
-        public bool DeleteExames(long e_id) 
+        public bool DeleteExames(long e_id)
         {
             try
             {
@@ -1101,30 +1101,30 @@ namespace University.Service
 
 
         }
-        
-        
 
-        
+
+
+
         public List<Logs> GetLog()
+        {
+            List<Logs> logs = new List<Logs>();
+            string query = "SELECT * FROM Logs";
+            _connection.Open();
+            using (_command = new SqlCommand(query, _connection))
             {
-                List<Logs> logs = new List<Logs>();
-                string query = "SELECT * FROM Logs";
-                _connection.Open();
-                using (_command = new SqlCommand(query, _connection))
+                using (var reader = _command.ExecuteReader())
                 {
-                    using (var reader = _command.ExecuteReader())
+                    while (reader.Read())
                     {
-                        while (reader.Read())
-                        {
-                            logs.Add(new Logs(reader["log_message"].ToString(), DateTime.Parse(reader["log_date"].ToString()), reader["log_error_place"].ToString()));
+                        logs.Add(new Logs(reader["log_message"].ToString(), DateTime.Parse(reader["log_date"].ToString()), reader["log_error_place"].ToString()));
 
-                        }
                     }
                 }
-                _connection.Close();
-                return logs;
             }
-        public bool AddLogs(string l_message,string l_error_place)
+            _connection.Close();
+            return logs;
+        }
+        public bool AddLogs(string l_message, string l_error_place)
         {
             try
             {
@@ -1134,7 +1134,7 @@ namespace University.Service
                 _connection.Open();
                 using (_command = new SqlCommand(query, _connection))
                 {
-                    _command.Parameters.Add(new SqlParameter("@l_message",l_message ));
+                    _command.Parameters.Add(new SqlParameter("@l_message", l_message));
                     _command.Parameters.Add(new SqlParameter("@l_date", DateTime.Now));
                     _command.Parameters.Add(new SqlParameter("@l_error_place", l_error_place));
 
@@ -1167,5 +1167,5 @@ namespace University.Service
 
 
 
-    } 
+    }
 }

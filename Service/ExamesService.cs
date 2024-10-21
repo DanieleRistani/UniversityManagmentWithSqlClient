@@ -5,15 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using University.Repository;
 
+
 namespace University.Service
 {
     public class ExamesService
     {
-        
+        DBservice db =new();
 
-        public void PrintExames(ExamesRepository examesRepository)
+        public void PrintExames()
         {
-          examesRepository.Exames.ForEach(e => Console.WriteLine(e.ToString()));
+          db.GetExames().ForEach(e => Console.WriteLine(e.ToString()));
         }
     }
 }

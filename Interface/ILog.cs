@@ -1,7 +1,6 @@
 using System;
 using University.Entity;
 using University.Repository;
-using University.Service;
 
 namespace University.Interface;
 

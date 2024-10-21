@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using University;
 using University.Enum;
-using University.Repository;
+
 using University.Service;
 
 
@@ -10,10 +10,7 @@ namespace UniversityManagerWithDB.Service
 {
     public class AppMenusService
     {
-        public StudentsRepository studentsRepository { get; set; } = new();
-        public TeachersRepository teachersRepository { get; set; } = new();
-        public ExamesRepository examesRepository { get; set; } = new();
-        public FacultiesRepository facultiesRepository { get; set; } = new();
+    
 
         public StudentsService studentsService { get; set; } = new();
         public TeachersService teachersService { get; set; } = new();
@@ -69,7 +66,7 @@ namespace UniversityManagerWithDB.Service
                     
                     case (int)StudentsManagmentEnum.GetAllStudents:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        studentsService.PrintStudents(studentsRepository);
+                        studentsService.PrintStudents();
                         break;
                     
                     case (int)StudentsManagmentEnum.AddStudent:
@@ -148,7 +145,7 @@ namespace UniversityManagerWithDB.Service
                 {
                     case (int)TeachersManagmentEnum.GetAllTeachers:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        teachersService.PrintTeachers(teachersRepository);
+                        teachersService.PrintTeachers();
                         break;
                   
                     case (int)TeachersManagmentEnum.AddTeacher:
@@ -228,7 +225,7 @@ namespace UniversityManagerWithDB.Service
                 {
                     case (int)ExamsManagmentEnum.GetAllExams:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        examesService.PrintExames(examesRepository);
+                        examesService.PrintExames();
                         break;
                     
                        
@@ -308,20 +305,21 @@ namespace UniversityManagerWithDB.Service
                 {
                     case (int)ExamsManagmentEnum.GetAllExams:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        facultiesService.PrintFaculties(facultiesRepository);
+                        facultiesService.PrintFaculties();
                         break;
-
-                        break;
+                       
                     case (int)ExamsManagmentEnum.AddExam:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-
+                        facultiesService.AddFaculties();
                         break;
                     case (int)ExamsManagmentEnum.UpdateExam:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
+                        facultiesService.UpdateFaculties();
 
                         break;
                     case (int)ExamsManagmentEnum.DeleteExam:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
+                        facultiesService.DeleteFaculties();
 
                         break;
                     case (int)ExamsManagmentEnum.Exit:

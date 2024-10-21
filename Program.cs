@@ -1,5 +1,4 @@
 ﻿using University.Enum;
-using University.Repository;
 using University.Service;
 using UniversityManagerWithDB.Service;
 
@@ -15,10 +14,7 @@ namespace University
 
 
             AppMenusService appMenusService = new AppMenusService();
-            appMenusService.facultiesRepository.ImportFaculties();
-            appMenusService.teachersRepository.ImportTeachers();
-            appMenusService.examesRepository.ImportExames();
-            appMenusService.studentsRepository.ImportStudents();
+         
             
             bool exitLoop = false;
 
