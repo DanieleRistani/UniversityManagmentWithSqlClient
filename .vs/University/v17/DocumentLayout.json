@@ -7,8 +7,20 @@
       "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:service\\facultiesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\daniele\\wa\\universitymanagment\\entity\\faculties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:entity\\faculties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\daniele\\wa\\universitymanagment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\daniele\\wa\\universitymanagment\\repository\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:repository\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\daniele\\wa\\universitymanagment\\service\\studentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:service\\studentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\daniele\\wa\\universitymanagment\\service\\examesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,16 +35,8 @@
       "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:service\\teachersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\daniele\\wa\\universitymanagment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\daniele\\wa\\universitymanagment\\interface\\ilog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:interface\\ilog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\daniele\\wa\\universitymanagment\\service\\studentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:service\\studentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,54 +58,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Faculties.cs",
+              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Entity\\Faculties.cs",
+              "RelativeDocumentMoniker": "Entity\\Faculties.cs",
+              "ToolTip": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Entity\\Faculties.cs",
+              "RelativeToolTip": "Entity\\Faculties.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T13:23:55.341Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TeachersService.cs",
-              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Service\\TeachersService.cs",
-              "RelativeDocumentMoniker": "Service\\TeachersService.cs",
-              "ToolTip": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Service\\TeachersService.cs",
-              "RelativeToolTip": "Service\\TeachersService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T13:22:43.518Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StudentsService.cs",
-              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Service\\StudentsService.cs",
-              "RelativeDocumentMoniker": "Service\\StudentsService.cs",
-              "ToolTip": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Service\\StudentsService.cs",
-              "RelativeToolTip": "Service\\StudentsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T13:21:11.498Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ExamesService.cs",
-              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Service\\ExamesService.cs",
-              "RelativeDocumentMoniker": "Service\\ExamesService.cs",
-              "ToolTip": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Service\\ExamesService.cs",
-              "RelativeToolTip": "Service\\ExamesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T13:20:38.102Z",
+              "WhenOpened": "2024-10-22T08:31:52.079Z",
               "EditorCaption": ""
             },
             {
@@ -112,27 +77,74 @@
               "RelativeDocumentMoniker": "Service\\FacultiesService.cs",
               "ToolTip": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Service\\FacultiesService.cs",
               "RelativeToolTip": "Service\\FacultiesService.cs",
-              "ViewState": "AgIAAKwAAAAAAAAAAADgv68AAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAKYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T12:59:29Z",
+              "WhenOpened": "2024-10-22T08:19:48.853Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T13:23:55.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TeachersService.cs",
+              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Service\\TeachersService.cs",
+              "RelativeDocumentMoniker": "Service\\TeachersService.cs",
+              "ToolTip": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Service\\TeachersService.cs",
+              "RelativeToolTip": "Service\\TeachersService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T13:22:43.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentsService.cs",
+              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Service\\StudentsService.cs",
+              "RelativeDocumentMoniker": "Service\\StudentsService.cs",
+              "ToolTip": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Service\\StudentsService.cs",
+              "RelativeToolTip": "Service\\StudentsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T13:21:11.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ExamesService.cs",
+              "DocumentMoniker": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Service\\ExamesService.cs",
+              "RelativeDocumentMoniker": "Service\\ExamesService.cs",
+              "ToolTip": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Service\\ExamesService.cs",
+              "RelativeToolTip": "Service\\ExamesService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T13:20:38.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AppMenusService.cs",
               "DocumentMoniker": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Service\\AppMenusService.cs",
               "RelativeDocumentMoniker": "Service\\AppMenusService.cs",
               "ToolTip": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Service\\AppMenusService.cs",
               "RelativeToolTip": "Service\\AppMenusService.cs",
-              "ViewState": "AgIAAC8BAAAAAAAAAAAmwD4BAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAADABAAAAAAAAAADgv0sBAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T12:57:32.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T12:57:32.32Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ILog.cs",
               "DocumentMoniker": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Interface\\ILog.cs",
               "RelativeDocumentMoniker": "Interface\\ILog.cs",
@@ -140,21 +152,19 @@
               "RelativeToolTip": "Interface\\ILog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T12:23:28.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T12:23:28.977Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "DBservice.cs",
               "DocumentMoniker": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Repository\\DBservice.cs",
               "RelativeDocumentMoniker": "Repository\\DBservice.cs",
               "ToolTip": "C:\\Users\\Daniele\\wa\\UniversityManagment\\Repository\\DBservice.cs",
               "RelativeToolTip": "Repository\\DBservice.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAuwMQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAALABAAAAAAAAAADwv7ABAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T07:43:55.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T07:43:55.053Z"
             }
           ]
         }

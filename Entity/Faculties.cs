@@ -5,7 +5,7 @@ namespace UniversityManagerWithDB.Entity
     using System;
     using System.Collections.Generic;
 
-    public partial class Faculties
+    public class Faculties
     {
         public long faculty_id { get; set; }
         public string faculty_name { get; set; }

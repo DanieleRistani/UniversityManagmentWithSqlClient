@@ -161,24 +161,16 @@ namespace University.Service
             xCursor = Console.GetCursorPosition().Left;
             yCursor = Console.GetCursorPosition().Top;
             string name = string.Empty;
+            Faculties faculty = new();
 
             while (!isValidField)
             {
                 name = Console.ReadLine();
+                faculty=db.GetFaculties().FindAll(f=>f.faculty_name.ToUpper()==name.ToUpper()).FirstOrDefault();
 
-                if (db.GetFaculties().Select(f => f.faculty_name.ToUpper()).Contains(name.ToUpper()))
+                if (faculty != null)
                 {
-
-                    db.GetFaculties().ForEach(f =>
-                    {
-                        if (f.faculty_name.ToUpper() == name.ToUpper())
-                        {
-                            db.DeleteFaculties(f.faculty_id);
-                            isValidField = true;
-
-                        }
-
-                    });
+                    db.DeleteFaculties(faculty.faculty_id);
                 }
                 else
                 {
